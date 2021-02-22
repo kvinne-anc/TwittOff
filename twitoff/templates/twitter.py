@@ -1,4 +1,5 @@
 """Retrieve tweets and users then create embeddings and populate DB"""
+
 import os
 from os import getenv 
 import pdb 
