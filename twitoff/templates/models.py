@@ -1,5 +1,5 @@
 """SQLAlchemy models and utility functions for TwitOff Application"""
-
+import flask
 from flask_sqlalchemy import SQLAlchemy
 
 DB = SQLAlchemy()

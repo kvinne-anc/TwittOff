@@ -5,6 +5,7 @@
         <title>TwitOff - {{ title }}</title> 
         <link rel="stylesheet" href="https://unpkg.com/picnic" />
     </head>
+
     <body>
         <nav>
             <a href="/" class="brand"><span>TwitOff!</span>span></html>a></span></a>
@@ -31,10 +32,25 @@
                     </select>
                     <select name="user2">
                         {% for user in users %}
-                        <option value="{{ user.name }}">{{ user.name }}</form>option>
-                            
-                            <user class="name"></user></option>
-                    </select>            </div>
-
-    </article>
+                        <option value="{{ user.name }}">{{ user.name }}</option>
+                        {% endfor %}       
+                    </select>     
+                    <input type="text" name="tweet_text placeholder="Tweet text to predict"> 
+                    <input type="submit" value="Compare Users"> 
+                </form>  
+             </div>
+             <div>
+                 <h2>Users</h2>
+                 {% for user in users %}
+                 <a href="/user/{{ user.name }}"><span class="stack">{{ user.name }}</span></a>
+                 {% endfor %}
+                 <form action="/user" method="post"> 
+                    <input type="text " name="user_name" placeholder="User to add">
+                    <input type="submit" value="Add User".
+                 </form>
+             </div>
+             {% endblock %}
+        </article>
+        <!-- <script ??="https://cdn.jsdeliver.???"/> -->
     </body>
+</html> 
