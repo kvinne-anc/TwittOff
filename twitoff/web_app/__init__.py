@@ -1,9 +1,13 @@
 # web_app/__init__.py
 
-from flask import Flask
+from flask import Flask, escape, request
+from flask import Blueprint
+
+#home_routes = Blueprint("home_routes", __name__)
+
 
 from web_app.routes.home_routes import home_routes
-from web_app.routes.book_routes import book_routes
+
 
 def create_app():
     app = Flask(__name__)
