@@ -1,11 +1,12 @@
 """Main app/routing file for TwitOff"""
 
-import os 
 from os import getenv
-from flask import Flask, render_template, request 
+
+from flask import Flask, render_template, request
+
 from .models import DB, User
 from .twitter import add_or_update_user, update_all_users
-from .predict import predict_user
+
 
 #creates application
 def create_app():
