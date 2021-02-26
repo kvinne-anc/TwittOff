@@ -10,7 +10,7 @@
 from os import getenv
 import tweepy  # to interact with the twitter API
 import spacy  # will use later
-from .models import DB, Tweet, User
+from twitoff.models import DB, Tweet, User
 
 
 TWITTER_AUTH = tweepy.OAuthHandler(

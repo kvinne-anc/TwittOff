@@ -1,9 +1,9 @@
 """Main app/routing file for TwitOff"""
 from os import getenv
 from flask import Flask, render_template, request
-from .twitter import add_or_update_user
-from .models import DB, User, MIGRATE
-from .predict import predict_user
+from twitoff.twitter import add_or_update_user
+from twitoff.models import DB, User, MIGRATE
+from twitoff.predict import predict_user
 
 
 def create_app():
