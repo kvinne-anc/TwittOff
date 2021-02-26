@@ -10,7 +10,8 @@ pymongo
 dnspython
 python-dotenv
 flask
-flask-sqlalchemyjinja2
+flask-sqlalchemy
+jinja2
 sklearn
 tweepy
 spacy
